@@ -68,7 +68,7 @@ public class LoadBalancing {
     private static List<Cloudlet> createCloudlets() {
         List<Cloudlet> cloudletList = new ArrayList<>();
         UtilizationModelDynamic utilizationModel = new UtilizationModelDynamic(0.5);
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 30; i++) {
             Cloudlet cloudlet = new CloudletSimple(10000, 1, utilizationModel);
             cloudlet.setId(i);
             cloudletList.add(cloudlet);
